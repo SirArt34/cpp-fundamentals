@@ -1,8 +1,19 @@
 #include <iostream>
 #include <vector>
 
-// Implement concatenateVector.
-// It should take 2 vectors and return one which has alternately elements from the first and the other one.
+std::vector<int> concatenateVector (std::vector<int>& group1, std::vector<int>& group2)
+{
+    std::vector<int> conc;
+    
+    for (size_t i = 0; i < group1.size(); i++)
+    {
+        conc.push_back(group1[i]);
+        conc.push_back(group2[i]);
+    }
+    return conc;
+
+}
+
 
 int main() {
     std::vector<int> vec1 {1, 2, 3, 4, 5};
