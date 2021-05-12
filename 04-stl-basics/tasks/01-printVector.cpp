@@ -2,8 +2,12 @@
 #include <vector>
 #include <string>
 
-// Implement printVector to print the content of a given vector on screen.
-// Each string in a new line.
+void printVector(const std::vector<std::string>& text)
+{
+    for (auto element : text){
+        std::cout << element << '\n';
+    }
+}
 
 int main() {
     std::vector<std::string> vec {
